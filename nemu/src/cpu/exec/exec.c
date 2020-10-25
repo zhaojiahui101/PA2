@@ -79,7 +79,7 @@ make_group(group4,
 
 /* 0xff */
 make_group(group5,
-	inv, inv, inv, inv, 
+	inv, inv, call_rm_v, call_rm_v, 
 	inv, inv, inv, inv)
 
 make_group(group6,
@@ -224,7 +224,7 @@ helper_fun _2byte_opcode_table [256] = {
 /* 0xf0 */	inv, inv, inv, inv,
 /* 0xf4 */	inv, inv, inv, inv,
 /* 0xf8 */	inv, inv, inv, inv,
-/* 0xfc */	inv, inv, inv, inv
+/* 0xfc */	inv, inv, inv, group5
 };
 
 make_helper(exec) {
