@@ -28,3 +28,17 @@
 #include "misc/misc.h"
 
 #include "special/special.h"
+
+#include "data-call/call.h"
+
+#include "data-push/push.h"
+
+#include "data-test/test.h"
+
+#include "data-jcc/je.h"
+
+#include "data-cmp/cmp.h"
+
+#include "data-pop/pop.h"
+
+#include "data-ret/ret.h"
