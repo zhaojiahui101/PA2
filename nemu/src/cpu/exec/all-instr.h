@@ -24,6 +24,10 @@
 #include "logic/shrd.h"
 
 #include "string/rep.h"
+#include "string/movs.h"
+#include "string/scas.h"
+#include "string/stos.h"
+#include "string/lods.h"
 
 #include "misc/misc.h"
 
@@ -35,10 +39,22 @@
 
 #include "data-test/test.h"
 
-#include "data-jcc/je.h"
+#include "data-jcc/jcc.h"
 
 #include "data-cmp/cmp.h"
 
 #include "data-pop/pop.h"
 
 #include "data-ret/ret.h"
+
+#include "data-add/add.h"
+
+#include "data-adc/adc.h"
+
+#include "data-sub/sub.h"
+
+#include  "data-sbb/sbb.h"
+
+#include "data-setcc/setcc.h"
+
+#include "data-jmp/jmp.h"

@@ -15,6 +15,16 @@
 	make_helper(concat5(instr, _, type, _, SUFFIX)) { \
 		return idex(eip, concat4(decode_, type, _, SUFFIX), do_execute); \
 	}
+#define do_execute_with_type(type) concat6(do_, instr, _, type, _, SUFFIX)
+#define make_instr_helper_with_type(type) \
+                make_helper(concat5(instr, _, type, _, SUFFIX)) { \
+				       return idex(eip, concat4(decode_, type, _, SUFFIX), do_execute_with_type(type));  \
+				}
+#define do_execute_with_instr_and_type(instr, type) concat6(do_, instr, _, type, _, SUFFIX)
+#define make_instr_helper_with_instr(type, instr) \
+                make_helper(concat5(instr, _, type, _, SUFFIX)) { \
+				        return idex(eip, concat4(decode_, type, _, SUFFIX), do_execute_with_instr_and_type(instr, type));  \
+				}
 
 extern char assembly[];
 #ifdef DEBUG

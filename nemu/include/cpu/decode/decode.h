@@ -3,6 +3,12 @@
 
 #include "cpu/helper.h"
 
+make_helper(decode_n_b);
+make_helper(decode_n_w);
+make_helper(decode_n_l);
+make_helper(updateCPU_b);
+make_helper(updateCPU_w);
+make_helper(updateCPU_l);
 make_helper(decode_r_b);
 make_helper(decode_r_w);
 make_helper(decode_r_l);

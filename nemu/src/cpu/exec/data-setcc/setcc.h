@@ -1,0 +1,24 @@
+#ifndef __SETCC_H__
+#define __SETCC_H__
+
+#define MAKE_SETCC_HELPER(INSTR) \
+        make_helper(concat(INSTR, _rm_b)); \
+
+MAKE_SETCC_HELPER(seto)
+MAKE_SETCC_HELPER(setno)
+MAKE_SETCC_HELPER(setb)
+MAKE_SETCC_HELPER(setae)
+MAKE_SETCC_HELPER(sete)
+MAKE_SETCC_HELPER(setne)
+MAKE_SETCC_HELPER(setbe)
+MAKE_SETCC_HELPER(seta)
+MAKE_SETCC_HELPER(sets)
+MAKE_SETCC_HELPER(setns)
+MAKE_SETCC_HELPER(setpe)
+MAKE_SETCC_HELPER(setpo)
+MAKE_SETCC_HELPER(setl)
+MAKE_SETCC_HELPER(setge)
+MAKE_SETCC_HELPER(setle)
+MAKE_SETCC_HELPER(setg)
+
+#endif
